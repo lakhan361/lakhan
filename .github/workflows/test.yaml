@@ -12,9 +12,9 @@ jobs:
         server_address: smtp.gmail.com
         server_port: 587
         username: lakhan36899@gmail.com
-        password: Lakhan@362
+        password: ${{secrets.PASSWORD}}
         subject: Github Actions job result
-        body: Build joob completed ${{github.repository}} successfully!
+        body: You got a new push in ${{github.repository}} on branch ${{github.ref}} from ${{github.actor}}!
         to: kawre36@gmail.com
         from: lakhan36899@gmail.com 
         content_type: text/html
