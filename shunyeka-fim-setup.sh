@@ -75,12 +75,12 @@ sleep 3
 printf "\n Pulling all the specific images!"
 
 #Pulling the specific dockerimages images 
-docker  pull wazuh/wazuh:3.13.1_7.8.0
-docker  pull wazuh/wazuh-elasticsearch:3.13.1_7.8.0
-docker  pull wazuh/wazuh-kibana:3.13.1_7.8.0
-docker  pull wazuh/wazuh-nginx:3.13.1_7.8.0
-docker  pull eeacms/postfix:2.10-3.5
-docker  pull nginx
+docker load < Shunyeka-elasticsearch.tar
+docker load < Shunyeka-FIM.tar
+docker load < Shunyeka-Kibana.tar
+docker load < Shunyeka-nginx.tar
+docker load < Shunyeka-postfix.tar
+
 
 function clean_up {
     # Perform program exit housekeeping
